@@ -1,151 +1,152 @@
 import { StyleSheet } from "react-native";
- 
+
 export const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: "#fffefeff",
+    backgroundColor: "#F9FAFB",
   },
+
   keyboardAvoiding: {
     flex: 1,
   },
+
   container: {
-    flexGrow: 1,
-    justifyContent: "center",
-    alignItems: "center",
-    paddingHorizontal: 24,
-    backgroundColor: "#03f5d8ff",
+    padding: 22,
+    paddingBottom: 40,
   },
+
+  /* ---------- HEADER ---------- */
   header: {
+    marginBottom: 30,
     alignItems: "center",
-    marginBottom: 40,
   },
+
+  brand: {
+    fontSize: 26,
+    fontWeight: "700",
+    color: "#111827",
+    marginBottom: 4,
+  },
+
   title: {
-    fontSize: 32,
-    fontWeight: "bold",
+    fontSize: 22,
     color: "#111827",
+    fontWeight: "600",
   },
+
   subtitle: {
-    fontSize: 16,
-    color: "#6b7280",
-    marginTop: 8,
-    textAlign: "center",
-  },
-  form: {
-    width: "100%",
-  },
-  inputGroup: {
-    marginBottom: 20,
-  },
-  label: {
     fontSize: 14,
-    fontWeight: "500",
-    color: "#374151",
-    marginBottom: 8,
+    color: "#6B7280",
+    marginTop: 4,
+    textAlign: "center",
+    width: "90%",
   },
+
+  /* ---------- CARD ---------- */
+  card: {
+    backgroundColor: "#FFFFFF",
+    padding: 20,
+    borderRadius: 18,
+    shadowColor: "#000",
+    shadowOpacity: 0.08,
+    shadowRadius: 6,
+    shadowOffset: { width: 0, height: 3 },
+    elevation: 3,
+    marginBottom: 30,
+  },
+
+  /* ---------- INPUTS ---------- */
+  inputGroup: {
+    marginBottom: 18,
+  },
+
+  inputWithIcon: {
+    flexDirection: "row",
+    alignItems: "center",
+    backgroundColor: "#F3F4F6",
+    borderRadius: 12,
+    paddingHorizontal: 12,
+    paddingVertical: 10,
+  },
+
+  leftIcon: {
+    marginRight: 8,
+  },
+
   input: {
-    backgroundColor: "#f9fafb",
-    borderWidth: 1,
-    borderColor: "#e5e7eb",
-    borderRadius: 8,
-    paddingHorizontal: 16,
-    paddingVertical: 14,
+    flex: 1,
     fontSize: 16,
     color: "#111827",
-    width: "100%",
   },
-  inputError: {
-    borderColor: "#dc2626",
+
+  label: {
+    fontSize: 15,
+    fontWeight: "500",
+    color: "#111827",
+    marginBottom: 6,
   },
-  fieldError: {
-    color: "#dc2626",
-    fontSize: 12,
-    marginTop: 6,
-  },
-  labelContainer: {
+
+  labelRow: {
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center",
-    width: "100%",
-    marginBottom: 8,
+    marginBottom: 6,
   },
-  forgotPassword: {
-    fontSize: 14,
-    fontWeight: "500",
-    color: "#4b5563",
-    textAlign: "right",
-    marginTop: 5,
+
+  hint: {
+    fontSize: 12,
+    color: "#6B7280",
   },
-  passwordInputContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    backgroundColor: "#f9fafb",
-    borderWidth: 1,
-    borderColor: "#e5e7eb",
-    borderRadius: 8,
-  },
+
   eyeIcon: {
-    position: "absolute",
-    right: 12,
+    paddingHorizontal: 4,
   },
-  registerError: {
-    color: "#dc2626",
-    fontSize: 14,
+
+  /* ---------- BUTTON ---------- */
+  primaryButton: {
     marginTop: 10,
+    backgroundColor: "#4F46E5",
+    paddingVertical: 14,
+    borderRadius: 12,
+    alignItems: "center",
+  },
+
+  primaryButtonDisabled: {
+    backgroundColor: "#A5B4FC",
+  },
+
+  primaryButtonText: {
+    color: "#fff",
+    fontSize: 17,
+    fontWeight: "600",
+  },
+
+  /* ---------- ERRO ---------- */
+  loginError: {
+    marginTop: 14,
+    color: "#DC2626",
+    fontSize: 14,
     textAlign: "center",
   },
-  signInButton: {
-    backgroundColor: "#111827",
-    paddingVertical: 16,
-    borderRadius: 8,
-    width: "100%",
-    alignItems: "center",
-    marginTop: 10,
-  },
-  signInButtonDisabled: {
-    backgroundColor: "#d1d5db",
-  },
-  signInButtonText: {
-    color: "#ffffff",
-    fontSize: 16,
-    fontWeight: "bold",
-  },
-  dividerContainer: {
-    flexDirection: "row",
-    alignItems: "center",
-    width: "100%",
-    marginVertical: 30,
-  },
-  dividerLine: {
-    flex: 1,
-    height: 1,
-    backgroundColor: "#e5e7eb",
-  },
-  dividerText: {
-    marginHorizontal: 16,
-    fontSize: 14,
-    color: "#6b7280",
-  },
-  socialLoginContainer: {
+
+  /* ---------- VOLTAR ---------- */
+  backToLogin: {
     flexDirection: "row",
     justifyContent: "center",
     alignItems: "center",
-    width: "100%",
-    gap: 20,
+    marginTop: 20,
   },
-  socialButton: {
-    padding: 12,
-    borderWidth: 1,
-    borderColor: "#e5e7eb",
-    borderRadius: 9999,
+
+  backToLoginText: {
+    marginLeft: 6,
+    fontSize: 15,
+    color: "#111827",
   },
-  signUpText: {
-    marginTop: 40,
-    fontSize: 14,
-    color: "#6b7280",
+
+  /* ---------- FOOTER ---------- */
+  footerNote: {
     textAlign: "center",
-  },
-  signUpLink: {
-    color: "#3b82f6",
-    fontWeight: "bold",
+    color: "#9CA3AF",
+    marginTop: 20,
+    fontSize: 13,
   },
 });

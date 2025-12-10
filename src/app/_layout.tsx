@@ -1,16 +1,23 @@
-/* Stack: container de navegação ( baseado no empilhamento de telas) => push/replace/back.
-Router.push("/rota") => empilha uma nova tela por cima da atual => usuario navega para a proxima tela,
- mas ainda deve poder voltar para a anterior.
-Router.replace("/rota") => substitua a tela atual (não empilha) => quando você não quer permitir voltar,
- como após o login (após se autenticar!).
-Router.back() => remove o topo da pilha (volta um tela) => quando o usuário clica em "voltar." */
-
+import { AuthProvider } from "@/contexts/authContext";
 import { Slot } from "expo-router";
+import { View } from "react-native";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 
-export default function RootLayout() {
-
-  return  (
-    <Slot />
+/*Redicionamento automático de acordo com a sessão*/
+const MainLayout = () => {
+  return (
+            <GestureHandlerRootView style={{ flex: 1 }}>
+                <View style={{ flex: 1 }}>
+                    <Slot />
+                </View>
+            </GestureHandlerRootView>
   );
- 
+}
+
+export default function Root() {
+  return (
+  <AuthProvider>
+    <MainLayout />
+  </AuthProvider>
+  );
 }
